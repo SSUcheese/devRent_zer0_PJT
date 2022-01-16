@@ -6,4 +6,8 @@
 
 ### 카카오 오븐으로 틀 만들기 및 퍼블리싱 팀에 기획 전달 1/16
 
-### 개발 1/17 ~ 2/21
+## 두 번째 페이지 기획 with 카카오 오븐
+
+### https://ovenapp.io/project/Pa3FBFsrxyYn4GxmC24nh661B6ZcESg6#jdbGu
+
+## 개발 1/17 ~ 2/21
