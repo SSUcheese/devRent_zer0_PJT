@@ -5,8 +5,8 @@ from subscriptions.models import Request
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'subscriptions/home.html')
 
 
 def complete(request):
-    return render(request, 'complete.html')
+    return render(request, 'subscriptions/complete.html')

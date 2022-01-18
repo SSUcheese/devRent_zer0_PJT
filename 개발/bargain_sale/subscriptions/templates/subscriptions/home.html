@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'subscriptions/css/home.css' %}>
+    <title>home page</title>
+</head>
+<body>
+    <div class="time-banner"></div>
+    <div class="header">
+        <div class="header-left">
+            <!--인덱스 버튼-->
+            <a href="#main1">main1</a>
+            <a href="#main2">main2</a>
+            <a href="#main3">main3</a>
+            <a href="#main4">main4</a>
+            <a href="#main5">main5</a>
+        </div>
+        <div class="header-right">
+            <!--구입하기 버튼-->
+            <button>구입하기</button> 
+        </div>
+    </div>
+    <div class="main">
+        <!--1번 블럭 : 대표 제품 및 폼-->
+        <div class="main1" id="main1">
+            <div class="main1_slider">slider</div>
+            <div class="main1_form">form</div>
+        </div>
+        <!--2번 블럭 : 제품 및 가격 확인-->
+        <div class="main2" id="main2">
+            <div class="main2_slider">slider</div>
+            <div class="main2_btn"><button>특가 구입 신청</button></div>
+        </div>
+        <!--3번 블럭 : 실시간 접수 현황-->
+        <div class="main3" id="main3">
+            <div class="main3_subscribe">subscribe</div>
+        </div>
+        <!--4번 블럭 : 구입하기-->
+        <div class="main4" id="main4">
+            <div class="main4_purchase">purchase</div>
+        </div>
+        <!--5번 블럭 : 주의 사항-->
+        <div class="main5" id="main5">
+            <div class="main5_warning">warning</div>
+        </div>
+
+        <!--다음 페이지 넘어가는 버튼-->
+        <a href="{% url 'complete' %}"><button>complete?</button></a>
+    </div>
+</body>
+</html>
