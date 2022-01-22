@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class Request(models.Model):
+class Submit(models.Model):
     name = models.CharField(max_length=50)
     phone_num = models.CharField(max_length=9)
     agency = models.CharField(max_length=50, choices=[(
@@ -13,8 +13,7 @@ class Request(models.Model):
         "기타", "기타")], default="희망 기종")
     pub_date = models.DateTimeField(auto_now=True)
 
-
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
 
 # 성함, 연락처, 통신사, 희망 기종, 신청 시간

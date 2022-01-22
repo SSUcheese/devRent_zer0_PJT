@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href={% static 'subscriptions/css/home.css' %}>
+    <link rel="stylesheet" href={% static 'subscriptions/css/modal.css' %}>
     <title>home page</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
         </div>
         <div class="header-right">
             <!--구입하기 버튼-->
-            <button>구입하기</button> 
+            <button id="modalOpenButton">구입하기</button> 
         </div>
     </div>
     <div class="main">
@@ -51,5 +52,37 @@
         <!--다음 페이지 넘어가는 버튼-->
         <a href="{% url 'complete' %}"><button>complete?</button></a>
     </div>
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="title">
+                <h1>특가 상담 신청</h1>
+            </div>
+            <div class="close-area">X</div>
+            <div class="content">
+                <div class="form">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <h3>성함</h3>
+                        <p>{{forms.name}}</p>
+                        <td>
+                        <h3>휴대폰 번호('-')없이 숫자만 입력하세요</h3>
+                        <p>{{forms.phone_num}}</p>
+                        <td>
+                        <h3>통신사</h3>
+                        <p>{{forms.agency}}</p>
+                        <td>
+                        <h3>희망기종</h3>
+                        <p>{{forms.company}}</p>
+                        <input type="submit" value="전송">
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+            
+        <div class="modal_layer"></div>
+    </div>
+
+    <script src={% static 'subscriptions/js/modal.js' %}></script>
 </body>
 </html>
