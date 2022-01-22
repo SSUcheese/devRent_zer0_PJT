@@ -1,0 +1,22 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}신청서 제출{% endblock title %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <h3>성함</h3>
+        <p>{{forms.name}}</p>
+        <td>
+        <h3>휴대폰 번호('-')없이 숫자만 입력하세요</h3>
+        <p>{{forms.phone_num}}</p>
+        <td>
+        <h3>통신사</h3>
+        <p>{{forms.agency}}</p>
+        <td>
+        <h3>희망기종</h3>
+        <p>{{forms.company}}</p>
+        <input type="submit" value="전송">
+    </form>
+{% endblock content %}
