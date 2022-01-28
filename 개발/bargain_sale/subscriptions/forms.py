@@ -1,12 +1,11 @@
-from dataclasses import field, fields
-from .models import Submit
 from django import forms
+from .models import Submit
 
 
 class SubmitForm(forms.ModelForm):
     class Meta:
         model = Submit
-        fields = ['name', 'phone_num', 'agency', 'company']
+        fields = '__all__'
 
 
 def __str__(self):
