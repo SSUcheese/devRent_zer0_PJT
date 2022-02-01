@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={% static 'subscriptions/image/.jpg' %}>
+    <link rel="stylesheet" href={% static 'subscriptions/css/home.css' %}>
     <link rel="stylesheet" href={% static 'subscriptions/css/modal.css' %}>
     <link rel="stylesheet" href={% static 'subscriptions/css/main_slider.css' %}>
     <title>home page</title>
@@ -29,8 +29,8 @@
     <div class="main">
         <!--1번 블럭 : 대표 제품 및 폼-->
         <div class="main1" id="main1">
-            <div class="main1_slider main_slider">
-                <ul class="main1_slides main_slides">
+            <div id="main1_slider" class="main_slider">
+                <ul id="main1_slides" class="main1_slides main_slides">
                     <li><img src={% static 'subscriptions/image/flower.jpg' %}></li>
                     <li><img src={% static 'subscriptions/image/fox.jpg' %}></li>
                     <li><img src={% static 'subscriptions/image/lightning.jpg' %}></li>
@@ -39,18 +39,18 @@
                     <li><img src={% static 'subscriptions/image/space.jpg' %}></li>
                     <li><div><h1>아무거나아무거나</h1></div></li>
                 </ul>
-                <p class="main1_slider_controller main_slider_controller">
+                <p id="main1_slider_controller" class="main_slider_controller">
                     <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
-                    <span class="prev">&lang;</span>
-                    <span class="next">&rang;</span>
+                    <span class="prev1 prev">&lang;</span>
+                    <span class="next1 next">&rang;</span>
                 </p>
             </div>
             <div class="main1_form">form</div>
         </div>
         <!--2번 블럭 : 제품 및 가격 확인-->
         <div class="main2" id="main2">
-            <div class="main2_slider main_slider">
-                <ul class="main2_slides main_slides">
+            <div id="main2_slider" class="main_slider">
+                <ul id="main2_slides" class="main2_slides main_slides">
                     <li><img src={% static 'subscriptions/image/flower.jpg' %}></li>
                     <li><img src={% static 'subscriptions/image/fox.jpg' %}></li>
                     <li><img src={% static 'subscriptions/image/lightning.jpg' %}></li>
@@ -59,10 +59,10 @@
                     <li><img src={% static 'subscriptions/image/space.jpg' %}></li>
                     <li><div><h1>아무거나아무거나</h1></div></li>
                 </ul>
-                <p class="main2_slider_controller main_slider_controller">
+                <p id="main2_slider_controller" class="main_slider_controller">
                     <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
-                    <span class="prev">&lang;</span>
-                    <span class="next">&rang;</span>
+                    <span class="prev2 prev">&lang;</span>
+                    <span class="next2 next">&rang;</span>
                 </p>
             </div>
             <div class="main2_btn"><button>특가 구입 신청</button></div>
@@ -115,7 +115,7 @@
     </div>
 
     <script src={% static 'subscriptions/js/modal.js' %}></script>
-    <script src={% static 'subscriptions/js/main1_slider.js' %}></script>
-    <script src={% static 'subscriptions/js/main2_slider.js' %}></script>
+    <!-- <script src={% static 'subscriptions/js/main1_slider.js' %}></script>
+    <script src={% static 'subscriptions/js/main2_slider.js' %}></script> -->
 </body>
 </html>

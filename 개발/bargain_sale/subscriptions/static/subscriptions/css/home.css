@@ -8,6 +8,10 @@
   height: 90px;
   background: black;
 
+  /* 스크롤 시 슬라이더보다 위에서 움직이게 하기 위함 */
+  z-index: 2;
+
+  /* 스크롤 시 고정  */
   position: sticky;
   top: 0;
 }
@@ -20,6 +24,10 @@
   justify-content: space-around;
   align-items: center;
 
+  /* 스크롤 시 슬라이더보다 위에서 움직이게 하기 위함 */
+  z-index: 2;
+
+  /* 스크롤 시 고정  */
   position: sticky;
   top: 90px;
 }
