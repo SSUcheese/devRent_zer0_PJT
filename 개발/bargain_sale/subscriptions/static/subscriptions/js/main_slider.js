@@ -47,9 +47,5 @@ next2.addEventListener('click', function(){
     if (currentldx !== slideCount -1) {
         moveSlide2(currentldx + 1);
     }
-<<<<<<< HEAD
-});
-=======
 });
 
->>>>>>> oshmos
