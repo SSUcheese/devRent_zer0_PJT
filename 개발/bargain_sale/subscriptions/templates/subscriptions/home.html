@@ -29,19 +29,28 @@
     <div class="main">
         <!--1번 블럭 : 대표 제품 및 폼-->
         <div class="main1" id="main1">
-            <div class="main1_slider main_slider">
-                <ul class="main1_slides main_slides">
-                    <li><img src={% static 'subscriptions/image/fox.jpg' %}></li>
-                    <li><img src={% static 'subscriptions/image/moon.jpg' %}></li>
-                    <li><div><h1>아무거나아무거나</h1></div></li>
-                </ul>
-                <p class="main1_slider_controller main_slider_controller">
-                    <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
-                    <span class="prev1 prev">&lang;</span>
-                    <span class="next1 next">&rang;</span>
-                </p>
+            <div id="main1_slider">
+                <div class="main1_slider main_slider">
+                    <ul class="main1_slides main_slides">
+                        <li><img src={% static 'subscriptions/image/fox.jpg' %}></li>
+                        <li><img src={% static 'subscriptions/image/moon.jpg' %}></li>
+                        <li><div><h1>아무거나아무거나</h1></div></li>
+                    </ul>
+                    <p class="main1_slider_controller main_slider_controller">
+                        <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
+                        <span class="prev1 prev">&lang;</span>
+                        <span class="next1 next">&rang;</span>
+                    </p>
+                </div>
             </div>
-            <div class="main1_form">form</div>
+            <div class="main1_form">
+                <h1>특가 상담 신청</h1>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{special_form.as_p}}
+                    <input type="submit" value="전송">
+                </form>
+            </div>
         </div>
         <!--2번 블럭 : 제품 및 가격 확인-->
         <div class="main2" id="main2">
@@ -85,17 +94,7 @@
                 <div class="form">
                     <form action="" method="post">
                         {% csrf_token %}
-                        <h3>성함</h3>
-                        <p>{{forms.name}}</p>
-                        <td>
-                        <h3>휴대폰 번호('-')없이 숫자만 입력하세요</h3>
-                        <p>{{forms.phone_num}}</p>
-                        <td>
-                        <h3>통신사</h3>
-                        <p>{{forms.agency}}</p>
-                        <td>
-                        <h3>희망기종</h3>
-                        <p>{{forms.company}}</p>
+                        {{special_form.as_p}}
                         <input type="submit" value="전송">
                     </form>
                 </div>

@@ -6,7 +6,10 @@ from .forms import SubmitForm
 
 
 def home(request):
-    return render(request, 'subscriptions/home.html')
+    special_form = SubmitForm()
+    ctx = {"special_form": special_form}
+
+    return render(request, 'subscriptions/home.html', ctx)
 
 
 def complete(request):
