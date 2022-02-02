@@ -9,6 +9,12 @@ li {
   list-style-type: none;
 }
 
+/* main1_slider 위치 조정 */
+#main1_slider {
+  position: relative;
+  left: -300px;
+}
+
 /* 보여줄 구간의 높이랑 넓이 설정 */
 .main_slider {
   width: 500px;

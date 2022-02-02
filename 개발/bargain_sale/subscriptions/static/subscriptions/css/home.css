@@ -48,6 +48,14 @@
   align-items: center;
 }
 
+.main1_form {
+  width: 300px;
+  height: 800px;
+  background: black;
+
+  border: 2px solid black;
+}
+
 .main2 {
   width: 100vw;
   height: 1960px;
@@ -67,6 +75,9 @@
   display: flex;
 }
 .main3_subscribe {
+  width: 800px;
+  height: 400px;
+  background: beige;
   margin: auto;
 }
 
