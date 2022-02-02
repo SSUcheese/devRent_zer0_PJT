@@ -9,7 +9,7 @@
   background: black;
 
   /* 스크롤 시 슬라이더보다 위에서 움직이게 하기 위함 */
-  /* z-index: 1; */
+  z-index: 1;
 
   /* 스크롤 시 고정  */
   position: sticky;
@@ -25,7 +25,7 @@
   align-items: center;
 
   /* 스크롤 시 슬라이더보다 위에서 움직이게 하기 위함 */
-  /* z-index: 1; */
+  z-index: 1;
 
   /* 스크롤 시 고정  */
   position: sticky;
@@ -50,8 +50,8 @@
 
 .main1_form {
   width: 300px;
-  height: 800px;
-  background: black;
+  height: 500px;
+  background: beige;
 
   border: 2px solid black;
 }
