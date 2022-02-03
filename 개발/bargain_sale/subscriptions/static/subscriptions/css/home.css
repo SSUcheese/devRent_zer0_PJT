@@ -100,5 +100,47 @@
   display: flex;
 }
 .main5_warning {
+  width: 80vw;
+  height: 1370px;
+  background: beige;
+  border-radius: 23.5px;
   margin: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+#main5_warning_title {
+  text-align: center;
+  margin-top: 40px;
+}
+#main5_warning_1st_box {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+#main5_warning_1st_box > img {
+  width: 100px;
+  height: 100px;
+}
+#main5_warning_2nd_box {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+#main5_warning_3rd_box {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+#main5_warning_4th_box {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.main5_warning_4th_box_title {
+  text-align: center;
+  margin-top: 20px;
 }
