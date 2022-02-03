@@ -15,11 +15,9 @@
     <div class="header">
         <div class="header-left">
             <!--인덱스 버튼-->
-            <a href="#main1">main1</a>
-            <a href="#main2">main2</a>
-            <a href="#main3">main3</a>
-            <a href="#main4">main4</a>
-            <a href="#main5">main5</a>
+            <a href="#main2">가격확인</a>
+            <a href="#main4">신청하기</a>
+            <a href="#main5">주의사항</a>
         </div>
         <div class="header-right">
             <!--구입하기 버튼-->
@@ -32,9 +30,9 @@
             <div id="main1_slider">
                 <div class="main1_slider main_slider">
                     <ul class="main1_slides main_slides">
-                        <li><img src={% static 'subscriptions/image/fox.jpg' %}></li>
-                        <li><img src={% static 'subscriptions/image/moon.jpg' %}></li>
-                        <li><div><h1>아무거나아무거나</h1></div></li>
+                        <li><img src={% static 'subscriptions/image/galaxy-zflip3_colors_cream.png' %}></li>
+                        <li><img src={% static 'subscriptions/image/galaxy-zfold3_5g.png' %}></li>
+                        <li><img src={% static 'subscriptions/image/iphone-13.png' %}></li>
                     </ul>
                     <p class="main1_slider_controller main_slider_controller">
                         <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
@@ -76,11 +74,88 @@
         </div>
         <!--4번 블럭 : 구입하기-->
         <div class="main4" id="main4">
-            <div class="main4_purchase">purchase</div>
+            <div class="main4_purchase">
+                <h1>특가 상담 신청</h1>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{special_form.as_p}}
+                    <input type="submit" value="전송">
+                </form>
+            </div>
         </div>
         <!--5번 블럭 : 주의 사항-->
         <div class="main5" id="main5">
-            <div class="main5_warning">warning</div>
+            <div class="main5_warning">
+                <div id="main5_warning_title">
+                    <h1>구입 신청 전 유의사항</h1>
+                </div>
+                <div id="main5_warning_1st_box" class="main5_warning_1st_box">
+                    <div>
+                        <img src="" alt="법정 대리인">
+                        <h3>청소년 가입 상담은 법정 대리인만 가능합니다.</h3>
+                    </div>
+                    <div>
+                        <img src="" alt="신용 불량자">
+                        <h3>연체 및 신용 불량자는 상담이 불가합니다.</h3>
+                    </div>
+                    <div>
+                        <img src="" alt="현금 완납">
+                        <h3>현금 완납 가입은 정책 상 불가합니다.</h3>
+                    </div>
+                </div>
+                <hr>
+                <div id="main5_warning_2nd_box" class="main5_warning_2nd_box">
+                    <h2>매일 달라지는 이통사 공시 지원금!!</h2>
+                    <h1>선착순 100명 한정 판매 이벤트</h1>
+                    <p>물량 소진 시 특가 판매 마감될 수 있습니다.</p>
+                </div>
+                <hr>
+                <div id="main5_warning_3rd_box" class="main5_warning_3rd_box">
+                    <div>
+                        <!-- 이미지 display 속성 인라인으로 하기 -->
+                        <img src="" alt="삼성 로고">
+                        <img src="" alt="애플 로고">
+                    </div>
+                    <h1>역대급 할인으로 최신 스마트폰 판매</h1>
+                    <p>이통사 별 공시 지원금은 매일 변경됩니다.</p>
+                </div>
+                <hr>
+                <div id="main5_warning_4th_box" class="main5_warning_4th_box">
+                    <div class="main5_warning_4th_box_title">
+                        <h1>간편 구매 진행 절차</h1>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="" alt="간편 문의">
+                            <h3>간편 문의</h3>
+                        </div>
+                        <div>
+                            <!-- 화살표 이미지 -->
+                            <img src="" alt="화살표">
+                        </div>
+                        <div>
+                            <img src="" alt="상담 안내 및 접수">
+                            <h3>상담 안내 및 접수</h3>
+                        </div>
+                        <div>
+                            <!-- 화살표 이미지 -->
+                            <img src="" alt="화살표">
+                        </div>
+                        <div>
+                            <img src="" alt="당일 배송">
+                            <h3>당일 배송</h3>
+                        </div>
+                        <div>
+                            <!-- 화살표 이미지 -->
+                            <img src="" alt="화살표">
+                        </div>
+                        <div>
+                            <img src="" alt="수령 및 개통">
+                            <h3>수령 및 개통</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--다음 페이지 넘어가는 버튼-->
